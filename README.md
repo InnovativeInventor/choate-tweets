@@ -1,7 +1,7 @@
 ## Choate-tweets
-The goal of this project is to preserve all tweets pertaining to Choate on Twitter for posterity. Twitter does not display all tweets beyond a certain point, so archiving all tweets could be potentially usefull for future students to analyze.
+The goal of this project is to preserve all tweets pertaining to Choate on Twitter for posterity. Twitter does not display all tweets beyond a certain point, so archiving all tweets could be potentially useful for future students to analyze.
 
-All tweets are dehydrated (as per [Twitter's devloper policy](https://developer.twitter.com/en/developer-terms/more-on-restricted-use-cases.html)). To hydrate the tweets, you can use the following tools:
+All tweets are dehydrated (as per [Twitter's developer policy](https://developer.twitter.com/en/developer-terms/more-on-restricted-use-cases.html)). To hydrate the tweets, you can use the following tools:
 - [twarc](https://github.com/DocNow/twarc) (CLI tool with other features)
 - [Hydrator](https://github.com/DocNow/hydrator) (GUI)
 
