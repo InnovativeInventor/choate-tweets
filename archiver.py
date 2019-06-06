@@ -1,4 +1,6 @@
 from archive import ArchiveTweet
+
+# Consumer API, Consumer secret, Access token, Access token secret
 archiver = ArchiveTweet('ram5ry9JGyleYXnm0x3wrkgZk', '2PnlOACLHGN3BDodpaV3RvaYOuCcDRCygcamDoJ6Q8SuucM5db', '944986243296882688-QwaMJx5UBB3Uj2o8Qjd2gjKzDp5GRKx', 'jZ5RquDuBLR4RcpSz2lv4Acgyk4L4IUVkSOhuzDDUX31C')
 
 # Official tweets
