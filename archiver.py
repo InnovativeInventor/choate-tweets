@@ -1,10 +1,11 @@
+import subprocess
 from archive import ArchiveTweet
 
 # Consumer API, Consumer secret, Access token, Access token secret
-archiver = ArchiveTweet('ram5ry9JGyleYXnm0x3wrkgZk',
-                        '2PnlOACLHGN3BDodpaV3RvaYOuCcDRCygcamDoJ6Q8SuucM5db',
-                        '944986243296882688-QwaMJx5UBB3Uj2o8Qjd2gjKzDp5GRKx',
-                        'jZ5RquDuBLR4RcpSz2lv4Acgyk4L4IUVkSOhuzDDUX31C')
+archiver = ArchiveTweet('seGCCQuugKszR7L7BiEOzqP4u',
+                        '8e44MhHHQ8FRpFVmimHArwxBdOjOgiv1AcfZVYwTwQg2WR0VVe',
+                        '944986243296882688-QUq9xA5DbjqRlmBN6qlwvd1SxkGT1NO',
+                        '4WKlluWkwuAKEJrBnzTvMCpOa517i1VVHoN68h3RdV0ju')
 
 # Official tweets
 with open("official_accounts.txt", "r") as filename:
@@ -18,6 +19,8 @@ with open("official_accounts.txt", "r") as filename:
         archiver.write_data('official_tweets.txt', ids)
         archiver.write_data('related_tweets.txt', ids)
         archiver.write_data('related_terms.txt', hashtags)
+
+subprocess.run("bash clean.sh", shell=True)
 
 # Related tweets
 with open("related_terms.txt", "r") as filename:
